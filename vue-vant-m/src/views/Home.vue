@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <div class="test">hahahah</div>
     <van-button type="primary" size="large">下一步</van-button>
   </div>
 </template>
@@ -15,3 +16,8 @@ export default {
   }
 }
 </script>
+<style lang="less" scoped>
+.home{
+  background: @White
+}
+</style>
