@@ -1,4 +1,4 @@
-# vue-vant2-m
+# vue-vant2-m-new
 
 #### 介绍
 "vant": "^2.7.1",
