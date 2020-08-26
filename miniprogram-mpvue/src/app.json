@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/login/main",
+    "pages/setting/main",
+    "pages/order/main",
+    "pages/blog/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f49b07",
+    "navigationBarTitleText": "mpvue",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "usingComponents": {
+    "van-search": "/vant-weapp/dist/search/index",
+    "van-button": "/vant-weapp/dist/button/index",
+    "van-field": "/vant-weapp/dist/field/index",
+    "van-cell": "/vant-weapp/dist/cell/index",
+    "van-cell-group": "/vant-weapp/dist/cell-group/index",
+    "van-datetime-picker": "/vant-weapp/dist/datetime-picker/index",
+    "van-popup": "/vant-weapp/dist/popup/index",
+    "van-picker": "/vant-weapp/dist/picker/index",
+    "van-toast": "/vant-weapp/dist/toast/index",
+    "van-rate": "/vant-weapp/dist/rate/index",
+    "van-card": "/vant-weapp/dist/card/index",
+    "van-dialog": "/vant-weapp/dist/dialog/index",
+    "van-icon": "/vant-weapp/dist/icon/index",
+    "van-loading": "/vant-weapp/dist/loading/index",
+    "van-switch": "/vant-weapp/dist/switch/index"
+  }
+}
