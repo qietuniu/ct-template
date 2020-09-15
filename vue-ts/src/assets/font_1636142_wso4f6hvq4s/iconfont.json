@@ -1,0 +1,86 @@
+{
+  "id": "1636142",
+  "name": "合作伙伴学院h5",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13031308",
+      "name": "icon_time",
+      "font_class": "icon_time1",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "13029742",
+      "name": "icon_collection1",
+      "font_class": "icon_collection1",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "13029356",
+      "name": "icon_key_open",
+      "font_class": "icon_key_open",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "13029350",
+      "name": "icon_key_close",
+      "font_class": "icon_key_close",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "13029321",
+      "name": "icon_password",
+      "font_class": "icon_password",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "13029313",
+      "name": "icon_bad",
+      "font_class": "icon_bad",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "13029314",
+      "name": "icon_succeed",
+      "font_class": "icon_succeed",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "13029316",
+      "name": "icon_collection",
+      "font_class": "icon_collection",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "13029317",
+      "name": "icon_my",
+      "font_class": "icon_my",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "13029318",
+      "name": "icon_seach",
+      "font_class": "icon_seach",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "13029319",
+      "name": "icon_good",
+      "font_class": "icon_good",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    }
+  ]
+}
