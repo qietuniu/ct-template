@@ -1,6 +1,6 @@
 <template>
   <div class="loginWrapper">
-    <Header :isShow="false"/>
+    <Header :isShow="false" />
     <div class="loginContainer">
       <div class="title">登录</div>
       <van-form @submit="handleLogin">
@@ -12,7 +12,12 @@
             { pattern: /^1[3456789]\d{9}$/, message: '手机号码格式错误' }
           ]"
         >
-          <van-icon slot="left-icon" class="iconfont" class-prefix="icon" name="icon_my"/>
+          <van-icon
+            slot="left-icon"
+            class="iconfont"
+            class-prefix="icon"
+            name="icon_my"
+          />
         </van-field>
         <van-field
           v-model="formData.password"
@@ -27,7 +32,12 @@
             :name="isSee ? 'icon_key_open' : 'icon_key_close'"
             @click="showPwd"
           />
-          <van-icon slot="left-icon" class="iconfont" class-prefix="icon" name="icon_password"/>
+          <van-icon
+            slot="left-icon"
+            class="iconfont"
+            class-prefix="icon"
+            name="icon_password"
+          />
         </van-field>
         <van-button type="primary" block native-type="submit">登录</van-button>
 
@@ -35,7 +45,7 @@
       </van-form>
     </div>
     <van-overlay :show="loading">
-      <van-loading type="spinner"/>
+      <van-loading type="spinner" />
     </van-overlay>
   </div>
 </template>

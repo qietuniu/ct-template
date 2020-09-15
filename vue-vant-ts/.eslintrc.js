@@ -11,7 +11,7 @@ module.exports = {
     '@vue/prettier/@typescript-eslint'
   ],
   parserOptions: {
-    'parser': 'babel-eslint',
+    // 'parser': 'babel-eslint',
     ecmaVersion: 2020
   },
   rules: {
@@ -23,10 +23,11 @@ module.exports = {
       'error',
       {
         singleQuote: true,
+        semi: false,
         trailingComma: 'none',
         bracketSpacing: true,
         jsxBracketSameLine: true
-      },
-    ],
+      }
+    ]
   }
-};
+}

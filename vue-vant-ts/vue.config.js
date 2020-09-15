@@ -10,11 +10,39 @@ const tsImportPluginFactory = require('ts-import-plugin')
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
-
-function resolve(dir) {
-  return path.join(__dirname, dir)
-}
 module.exports = {
+  outputDir: process.env.outputDir,
+  assetsDir: 'static',
+  publicPath:
+    process.env.NODE_ENV === 'production'
+      ? process.env.VUE_APP_FLAG === 'pro'
+        ? '/'
+        : '/'
+      : '/',
+  devServer: {
+    port: port,
+    open: false,
+    proxy: {
+      '/dev-api': {
+        target: 'https://qietuniu.com',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/dev-api': ''
+        }
+      }
+    },
+    disableHostCheck: true
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': resolve('src'),
+        assets: '@/assets',
+        components: '@/components',
+        views: '@/views'
+      }
+    }
+  },
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'less',
@@ -63,7 +91,5 @@ module.exports = {
       }
     }
   },
-  transpileDependencies: [
-    'vuex-module-decorators'
-  ]
+  transpileDependencies: ['vuex-module-decorators']
 }

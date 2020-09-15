@@ -2,12 +2,16 @@
   <div class="listWrapper">
     <div class="filterContainer">
       <van-dropdown-menu active-color="#fc8b1f">
-        <van-dropdown-item v-model="listQuery.sortBy" :options="sortOptions" @change="changeSort"/>
+        <van-dropdown-item
+          v-model="listQuery.sortBy"
+          :options="sortOptions"
+          @change="changeSort"
+        />
       </van-dropdown-menu>
       <div></div>
       <div class="selectTitle" @click="showPop">
         筛选
-        <van-icon name="filter-o"/>
+        <van-icon name="filter-o" />
       </div>
       <van-popup
         v-model="show"
@@ -26,13 +30,17 @@
             <div
               :class="tagId == null ? 'selectItem active' : 'selectItem'"
               @click="tagId = null"
-            >全部</div>
+            >
+              全部
+            </div>
             <div
               v-for="item in tagOptions"
               :key="item.id"
               :class="tagId == item.id ? 'selectItem active' : 'selectItem'"
               @click="tagId = item.id"
-            >{{ item.name }}</div>
+            >
+              {{ item.name }}
+            </div>
           </van-cell-group>
         </div>
         <div class="btnContainer" style="position:unset">
@@ -43,20 +51,28 @@
     </div>
     <div class="listContent">
       <div style="flex:1">
-        <van-list v-model="loading" :finished="finished" class="listContainer" @load="getList">
-          <div v-if="loading == false && list.length == 0" class="empty">暂无~</div>
-          <div class="listItem" v-for="(item, index) in list" v-else :key="index">
-            <img v-lazy="item.url">
+        <van-list
+          v-model="loading"
+          :finished="finished"
+          class="listContainer"
+          @load="getList"
+        >
+          <div v-if="loading == false && list.length == 0" class="empty">
+            暂无~
+          </div>
+          <div
+            class="listItem"
+            v-for="(item, index) in list"
+            v-else
+            :key="index"
+          >
+            <img v-lazy="item.url" />
             <div class="name">{{ item.name }}</div>
           </div>
         </van-list>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-
-    <van-overlay :show="loading">
-      <van-loading type="spinner"/>
-    </van-overlay>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 module.exports = {
-  'orange': '#fc8b1f',
-  'green': '#fc8b1f', //主要
-  'blue': '#fc8b1f',
-  'red': '#ea5235',
+  orange: '#fc8b1f',
+  green: '#fc8b1f', //主要
+  blue: '#fc8b1f',
+  red: '#ea5235',
   'button-info-color': '#fc8b1f',
   'text-color': '#333',
   'border-color': '#EDEFF1',
@@ -13,4 +13,4 @@ module.exports = {
   'nav-bar-arrow-size': '18px',
   'button-border-radius': '5px',
   'checkbox-size': '17px'
-};
+}

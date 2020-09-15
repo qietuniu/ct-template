@@ -34,14 +34,9 @@ module.exports = {
 
 ### . eslintrc. js
 
-* 开发环境与ESLint当前的解析功能不兼容需要新增'parser': 'babel-eslint'
-* 代码习惯: 使用单引号和不加分号；
+代码习惯: 使用单引号和不加分号
 
 ``` javascript
-parserOptions: {
-        'parser': 'babel-eslint',
-        ecmaVersion: 2020
-    },
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -51,6 +46,7 @@ parserOptions: {
             'error',
             {
                 singleQuote: true,
+                semi: false,
                 trailingComma: 'none',
                 bracketSpacing: true,
                 jsxBracketSameLine: true

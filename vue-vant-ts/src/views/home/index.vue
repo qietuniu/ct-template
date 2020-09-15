@@ -1,9 +1,9 @@
 <template>
   <div class="homeWrapper">
-    <Header/>
-    <Tab :list="tabOptions" :active="tab" @tabClick="tabClick"/>
-    <Main v-if="tab == 0"/>
-    <List v-if="tab == 1"/>
+    <Header />
+    <Tab :list="tabOptions" :active="tab" @tabClick="tabClick" />
+    <Main v-if="tab == 0" />
+    <List v-if="tab == 1" />
   </div>
 </template>
 

@@ -4,7 +4,7 @@ import {
   Module,
   Mutation,
   Action,
-  getModule,
+  getModule
 } from 'vuex-module-decorators'
 import Cookies from 'js-cookie'
 import store from '@/store'

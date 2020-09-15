@@ -37,7 +37,7 @@
         <van-col span="6">span: 6</van-col>
       </van-row>
     </div>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 

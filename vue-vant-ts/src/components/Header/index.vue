@@ -1,7 +1,7 @@
 <template>
   <div class="headerContainer">
     <router-link to="/home" class="logo">
-      <img class="logoImg" src="../../assets/img/logo.png" alt>
+      <img class="logoImg" src="../../assets/img/logo.png" alt />
       <span>切图妞</span>
     </router-link>
     <div class="info">
@@ -24,10 +24,14 @@
         />
       </div>
       <router-link class="imgLink" :to="{ path: '/member' }" v-if="!member">
-        <img v-if="token" src="../../assets/img/logo.png">
+        <img v-if="token" src="../../assets/img/logo.png" />
       </router-link>
     </div>
-    <van-popup v-model="show" position="top" :style="{ height: isSearch ? '100%' : 'auto' }">
+    <van-popup
+      v-model="show"
+      position="top"
+      :style="{ height: isSearch ? '100%' : 'auto' }"
+    >
       <van-search
         v-model="searchKey"
         show-action
@@ -38,15 +42,16 @@
       <div v-if="isSearch" class="searchContent">
         <div class="singleList" v-if="list.length != 0">
           <div class="singleTotal">
-            共 {{ list.length }} 条 “
-            <span class="primary">{{ showText }}</span>” 相关的结果
+            共 {{ list.length }} 条 “ <span class="primary">{{ showText }}</span
+            >” 相关的结果
           </div>
         </div>
         <div class="empty" v-else>
-          <img src="../../assets/img/searchEmpty.png">
+          <img src="../../assets/img/searchEmpty.png" />
           <div>
             没有找到“
-            <span class="primary">{{ showText }}</span>” 相关的结果
+            <span class="primary">{{ showText }}</span
+            >” 相关的结果
           </div>
           <div>请尝试其他关键词搜索</div>
         </div>

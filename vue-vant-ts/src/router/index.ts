@@ -7,22 +7,22 @@ const routes: Array<RouteConfig> = [
   {
     path: '/login',
     name: 'login',
-    component: () => import('../views/login/index.vue'),
+    component: () => import('../views/login/index.vue')
   },
   {
     path: '*',
-    redirect: '/home',
+    redirect: '/home'
   },
   {
     path: '/home',
     name: 'home',
-    component: () => import('../views/home/index.vue'),
+    component: () => import('../views/home/index.vue')
   },
   {
     path: '/member',
     name: 'member',
-    component: () => import('../views/member/index.vue'),
-  },
+    component: () => import('../views/member/index.vue')
+  }
 ]
 
 routes.forEach(route => {
@@ -32,7 +32,7 @@ routes.forEach(route => {
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes,
+  routes
 })
 
 router.beforeEach((to, from, next) => {

@@ -1,7 +1,7 @@
 <template>
   <van-swipe v-if="images.length != 0" :autoplay="3000">
     <van-swipe-item v-for="(item, index) in images" :key="index">
-      <img v-lazy="item.url || defaultImg">
+      <img v-lazy="item.url || defaultImg" />
     </van-swipe-item>
   </van-swipe>
 </template>

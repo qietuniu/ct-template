@@ -1,9 +1,9 @@
 <template>
   <div class="memberWrapper" v-if="token">
-    <Header :member="true"/>
+    <Header :member="true" />
     <div class="userContent">
       <div class="imgInfo">
-        <img src="../../assets/img/logo.png">
+        <img src="../../assets/img/logo.png" />
       </div>
       <div class="userInfo">
         <div class="title">欢迎你，{{ userName }}！</div>
@@ -11,20 +11,20 @@
     </div>
     <van-cell-group class="memberList">
       <a href="https://www.qietuniu.com">
-        <van-cell title="切图妞博客" icon="todo-list" is-link/>
+        <van-cell title="切图妞博客" icon="todo-list" is-link />
       </a>
       <a href="https://github.com/qietuniu">
-        <van-cell title="Github" icon="todo-list" is-link/>
+        <van-cell title="Github" icon="todo-list" is-link />
       </a>
       <a href="https://segmentfault.com/u/qietuniu">
-        <van-cell title="Segmentfault" icon="todo-list" is-link/>
+        <van-cell title="Segmentfault" icon="todo-list" is-link />
       </a>
     </van-cell-group>
     <div class="exitBtn" @click="handleExit">退出账号</div>
   </div>
 </template>
 
-<script lang='ts'>
+<script lang="ts">
 import { Vue, Component, Watch } from 'vue-property-decorator'
 import { UserModule } from '../../store/modules/user'
 import Header from '../../components/Header/index.vue'
