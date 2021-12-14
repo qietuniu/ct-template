@@ -22,6 +22,7 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
+        htmlWhitespaceSensitivity: 'ignore',
         singleQuote: true,
         semi: false,
         trailingComma: 'none',
